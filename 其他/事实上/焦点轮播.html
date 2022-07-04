@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			#contenner{
+				position: relative;
+				width: 640px;
+				height: 360px;
+				overflow: hidden;
+			}
+			#list{
+				float: left;
+				width: 5000px;
+				height: 360px;
+				margin-left: 0px;
+				position: absolute;
+				transition: all 0.3s ease-out;
+			}
+			.img{
+				float: left;
+				width: 640px;
+				height: 360px;
+				background-color: #ccc;
+				font-size: 50px;
+				text-align: center;
+				line-height: 360px;
+			}
+			.pont{
+				position: absolute;
+				bottom: 10px;
+				right: 20px;
+			}
+			.dian{
+				float: left;
+				width: 8px;
+				height: 8px;
+				border-radius: 8px;
+				border: 1px solid red;
+				margin-left: 8px;
+				cursor: pointer;
+			}
+			#btn_left{
+				position: absolute;
+				width: 50px;
+				height: 80px;
+				background-color: red;
+				opacity: 0.5;
+				top: 50%;
+				transform: translate(0,-50%);
+				cursor: pointer;
+				transition: all 0.3s;
+			}
+			#btn_left:hover{
+				opacity: 1;
+			}
+			#btn_right:hover{
+				opacity: 1;
+			}
+			#btn_right{
+				position: absolute;
+				width: 50px;
+				height: 80px;
+				background-color: red;
+				top: 50%;
+				right: 0;
+				opacity: 0.5;
+				transform: translate(0,-50%);
+				cursor: pointer;
+			}
+			.dian_bg{
+				background-color: red;
+			}
+		</style>
+		<script>
+			window.onload = function (){
+				var contenner = document.getElementById("contenner");
+				var list = document.getElementById("list");
+				var left = document.getElementById("btn_left");
+				var right = document.getElementById("btn_right");
+				var dian = document.getElementsByClassName("dian");
+				var index = 1;
+				function show(){
+					for (var i = 0;i<dian.length;i++) {
+						if (dian[i].className == "dian dian_bg"){
+							dian[i].className = "dian";
+							break;
+						}
+					}
+					dian[index - 1].className = "dian dian_bg"; 
+				}
+				function ani(offor){
+					var newLeft = parseInt(list.style.left) + offor;
+					list.style.left = newLeft + "px";
+					if (newLeft > 0){
+						list.style.left = -3840 + "px";
+					}
+					if (newLeft < -3840){
+						list.style.left = 0 + "px";
+					}
+				}
+				left.onclick = function (){
+					if (index ==1){
+						index = 7;
+					}
+					else{
+						index -= 1;
+					}
+					show();
+					ani(640);
+				}
+				right.onclick = function (){
+					if (index ==7){
+						index = 1;
+					}
+					else{
+						index += 1;
+					}
+					
+					show();
+					ani(-640);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="contenner">
+			<div id="list" style="left: -0px;">
+				<div class="img" index>1</div>
+				<div class="img">2</div>
+				<div class="img">3</div>
+				<div class="img">4</div>
+				<div class="img">5</div>
+				<div class="img">6</div>
+				<div class="img">7</div>
+			</div>
+			<div id="btn_left"></div>
+			<div id="btn_right"></div>
+			<div class="pont">
+				<div class="dian dian_bg" index="1"></div>
+				<div class="dian" index="2"></div>
+				<div class="dian" index="3"></div>
+				<div class="dian" index="4"></div>
+				<div class="dian" index="5"></div>
+				<div class="dian" index="6"></div>
+				<div class="dian" index="7"></div>
+			</div>
+		</div>
+	</body>
+</html>

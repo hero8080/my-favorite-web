@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jq22.js"></script>
+		<script type="text/javascript" src="js/sj.js" ></script>
+
+	</head>
+
+	<body>
+		<div class="nav">
+			<div class="nav_con">
+				<ul>
+					<li>
+						<a href="https://www.baidu.com"><span>BAIDU</span><span class="spa" style="padding: 0 10px;">百度</span></a>
+					</li>
+					<li>
+						<a href="https://www.bilibili.com/" id="ping" target=""><span>BILI</span><span class="spa" style="padding: 0 30px;">哔哩</span></a>
+					</li>
+					<li>
+						<a><span>INTERFACE</span><span class="spa" style="padding: 0 30px;">UI</span></a>
+					</li>
+					<li>
+						<a><span>WEBSITE</span><span class="spa" style="padding: 0 40px;">网站</span></a>
+					</li>
+					<li>
+						<a><span>VIDEO</span><span class="spa" style="padding: 0 10px;">视频</span></a>
+					</li>
+					<li>
+						<a><span>LEARNING</span><span class="spa" style="padding: 0 45px;">学习</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航-->
+		<ul class="daohang">
+			<div class="dh"></div>
+			<a href="https://www.baidu.com/">
+				<li class="bianju">百度一下</li>
+			</a>
+			<a href="https://www.2345.com/">
+				<li >网址导航</li>
+			</a>
+			<a href="http://fanyi.baidu.com/">
+				<li>百度翻译</li>
+			</a>
+			<a href="http://image.baidu.com/?fr=shitu">
+				<li>百度识图</li>
+			</a>
+			<a href="https://pan.baidu.com/">
+				<li>百度网盘</li>
+			</a>
+			<a href="http://www.zhaopin.com/">
+				<li>智联招聘</li>
+			</a>
+			<a href="http://www.toutiao.com/">
+				<li>今日头条</li>
+			</a>
+			<a href="http://www.zol.com.cn/">
+				<li>中关在线</li>
+			</a>
+			<a href="http://www.youku.com/">
+				<li>优酷视频</li>
+			</a>
+			<a href="https://www.taobao.com/">
+				<li>淘宝商城</li>
+			</a>
+			<a href="http://www.tieyou.com/">
+				<li>车票机票</li>
+			</a>
+		</ul>
+		
+		<!--实用-->
+		<ul class="daohang">
+			<div class="sy"></div>
+			<a href="https://image.baidu.com/">
+				<li class="bianju">百度图片</li>
+			</a>
+			<a href="http://www.zbj.com/">
+				<li>八戒接单</li>
+			</a>
+			<a href="http://www.cssmoban.com/">
+				<li>模板之家</li>
+			</a>
+
+			<a href="http://www.runoob.com/">
+				<li>菜鸟教程</li>
+			</a>
+			<a href="http://www.htmleaf.com/">
+				<li>前端插件</li>
+			</a>
+			<a href="https://chuanke.baidu.com/">
+				<li>百度传课</li>
+			</a>
+			<a href="https://index.baidu.com/">
+				<li>百度指数</li>
+			</a>
+			<a href="https://v.qq.com/">
+				<li>腾讯视频</li>
+			</a>
+			<a href="http://map.baidu.com/">
+				<li>百度地图</li>
+			</a>
+			<a href="https://www.baidu.com/gaoji/advanced.html">
+				<li>高级搜索</li>
+			</a>
+			<a href="http://baidu.28.com/">
+				<li>商机创业</li>
+			</a>
+
+		</ul>
+		
+		<div class="rongqi">
+			<!--时钟-->
+			<div class="shizhong">
+				<canvas id="canvas" style="margin-top: 40px;"></canvas>
+				<p style="margin-top: 15px;color: #613600;font-size: 14px;"><span id='year'></span>年<span id="mounth"></span>月<span id="day"></span>日</p>
+			</div>
+			<!--常用-->
+			
+			<div class="con" style="background-image:url(img/huaban.png);">
+				<a href="http://huaban.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">花瓣网</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/qiantuwang.png);margin-left: 10px;">
+				<a href="http://www.58pic.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">千图网</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/qiankuwang.png);margin-left: 10px;">
+				<a href="http://588ku.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">千库网</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/minyuansu.png);margin-left: 10px;">
+				<a href="http://www.51yuansu.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">觅元素</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/zhanku.png);margin-top: 10px;">
+				<a href="http://www.zcool.com.cn/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">站酷</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/iconfont.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.iconfont.cn/plus">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">阿里巴巴矢量图标库</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/ui.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.ui.cn/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">UI中国</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/wotuwang.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.ooopic.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">我图网</p>
+						
+					</div>
+				</a>
+			</div>
+		</div>
+
+<!--平面类-->
+
+		<div class="rq">
+			<div class="lanrenzhijia">
+				<div class="title cf">
+					<ul class="title-list fr cf " id="title1">
+						<li class="on">图片</li>
+						<li>字体</li>
+						<li>配色</li>
+						<li>灵感</li>
+						<p><b></b></p>
+					</ul>
+				</div>
+				<div class="product-wrap" id="product1">
+					<!--案例1-->
+					<div class="product show">
+						<ul class="cf">
+							<a href="http://www.huiyi8.com/"><div class="cf_l" style="background: url(img/huiyi.png) center no-repeat;"></div></a>
+							<a href="http://www.warting.com/"><div class="cf_r" style="background: url(img/shejidiguo.png) center no-repeat;"></div></a>
+							<a href="http://www.huitu.com/"><div class="cf_l" style="background: url(img/huituwang.png) center no-repeat;"></div></a>
+							<a href="http://www.35pic.com/"><div class="cf_r" style="background: url(img/qianguangwang.png) center no-repeat;"></div></a>
+							<a href="http://www.lanrentuku.com/"><div class="cf_l" style="background: url(img/lanren.png) center no-repeat;"></div></a>
+							<a href="http://www.cdsns.com/"><div class="cf_r" style="background: url(img/shequ.png) center no-repeat;"></div></a>
+							<a href="http://www.tupian114.com/"><div class="cf_l" style="background: url(img/tupian114.png) center no-repeat;"></div></a>
+							<a href="http://www.logohhh.com/"><div class="cf_r" style="background: url(img/langya.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例2-->
+					<div class="product">
+						<ul class="cf">
+							<a href="http://www.zhaozi.cn/"><div class="cf_l" style="background: url(img/zhaozi.png) center no-repeat;"></div></a>
+							<a href="http://www.fontke.com"><div class="cf_r" style="background: url(img/zikewang.png) center no-repeat;"></div></a>
+							<a href="http://www.sj00.com/"><div class="cf_l" style="background: url(img/shejiwuxian.png) center no-repeat;"></div></a>
+							<a href="http://www.mobanwang.com/"><div class="cf_r" style="background: url(img/mubanwang.png) center no-repeat;"></div></a>
+							<a href="http://www.17ziti.com/"><div class="cf_l" style="background: url(img/zitizhijia.png) center no-repeat;"></div></a>
+							<a href="http://www.font5.com.cn/"><div class="cf_r" style="background: url(img/liangban.png) center no-repeat;"></div></a>
+							<a href="http://www.zitichina.com/"><div class="cf_l" style="background: url(img/zitizhongguo.png) center no-repeat;"></div></a>
+							<a href="http://font.knowsky.com/"><div class="cf_r" style="background: url(img/zitibaoku.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例3-->
+					<div class="product">
+						<ul class="cf">
+							<a href="https://color.hailpixel.com/"><div class="cf_l" style="background: url(img/hailpixel.png) center no-repeat;"></div></a>
+							<a href="https://galactic.ink/sphere/"><div class="cf_r" style="background: url(img/galactic.png) center no-repeat;"></div></a>
+							<a href="https://color.adobe.com/zh/create/color-wheel/"><div class="cf_l" style="background: url(img/picta.png) center no-repeat;"></div></a>
+							<a href="http://www.pictaculous.com/"><div class="cf_r" style="background: url(img/adobe_color_cc.png) center no-repeat;"></div></a>
+							<a href="http://www.peise.net/"><div class="cf_l" style="background: url(img/peisewang.png) center no-repeat;"></div></a>
+							<a href="http://tool.c7sky.com/webcolor/#hue_0"><div class="cf_r" style="background: url(img/peise.png) center no-repeat;"></div></a>
+							<a href="http://www.shejidaren.com/examples/tools/color-scheme/"><div class="cf_l" style="background: url(img/color_hunter.png) center no-repeat;"></div></a>
+							<a href="http://www.colorhunter.com/"><div class="cf_r" style="background: url(img/color_scheme.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例4-->
+					<div class="product">
+						<ul class="cf">
+							<a href="http://www.xiusheji.com/"><div class="cf_l" style="background: url(img/xiusheji.png) center no-repeat;"></div></a>
+							<a href="http://chuangyiren.cn/"><div class="cf_r" style="background: url(img/chahua.png) center no-repeat;"></div></a>
+							<a href="http://www.8bears.com/"><div class="cf_l" style="background: url(img/bazhixiong.png) center no-repeat;"></div></a>
+							<a href="http://www.pplock.com/"><div class="cf_r" style="background: url(img/pp.png) center no-repeat;"></div></a>
+							<a href="http://arting365.com/"><div class="cf_l" style="background: url(img/arting.png) center no-repeat;"></div></a>
+							<a href="http://www.topys.cn/"><div class="cf_r" style="background: url(img/topys.png) center no-repeat;"></div></a>
+							<a href="http://www.ifavart.com/index.html/"><div class="cf_l" style="background: url(img/ifwant.png) center no-repeat;"></div></a>
+							<a href="http://www.ruiii.com/Photo/"><div class="cf_r" style="background: url(img/ruiyi.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--标题栏-->
+
+			<div style="height: 50px;">
+				<div class="biaoti" ></div>
+			</div>
+
+			<div class="con" style="background-image:url(img/nituwang.png);">
+				<a href="http://www.nipic.com/index.html">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">昵图网</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/shijueme.png);margin-left: 10px;">
+				<a href="http://www.shijue.me/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">视觉中国</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/shetuwang.png);margin-left: 10px;">
+				<a href="http://699pic.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">摄图网</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/quanjing.png);margin-left: 10px;">
+				<a href="http://www.quanjing.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">全景网</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/baotuwang.png);margin-top: 10px;">
+				<a href="http://888pic.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">包图网</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/chuangketie.png);margin-left: 10px;margin-top: 10px;">
+				<a href="https://www.chuangkit.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">创客贴</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/sheji90.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://90sheji.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">90设计</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/taotu.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.taopic.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">淘图网</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		
+		<div class="rq">
+			<div class="lanrenzhijia">
+				<div class="title cf">
+					<ul class="title-list fr cf " id="title2">
+						<li class="on">图片</li>
+						<li>字体</li>
+						<li>配色</li>
+						<li>灵感</li>
+						<!--<li>会员卡</li>-->
+						<p><b></b></p>
+					</ul>
+				</div>
+				<div class="product-wrap" id="product2">
+					<!--案例1-->
+					<div class="product show">
+						<ul class="cf">
+							<a href="http://www.huiyi8.com/"><div class="cf_l" style="background: url(img/huiyi.png) center no-repeat;"></div></a>
+							<a href="http://www.warting.com/"><div class="cf_r" style="background: url(img/shejidiguo.png) center no-repeat;"></div></a>
+							<a href="http://www.huitu.com/"><div class="cf_l" style="background: url(img/huituwang.png) center no-repeat;"></div></a>
+							<a href="http://www.35pic.com/"><div class="cf_r" style="background: url(img/qianguangwang.png) center no-repeat;"></div></a>
+							<a href="http://www.lanrentuku.com/"><div class="cf_l" style="background: url(img/lanren.png) center no-repeat;"></div></a>
+							<a href="http://www.cdsns.com/"><div class="cf_r" style="background: url(img/shequ.png) center no-repeat;"></div></a>
+							<a href="http://www.tupian114.com/"><div class="cf_l" style="background: url(img/tupian114.png) center no-repeat;"></div></a>
+							<a href="http://www.logohhh.com/"><div class="cf_r" style="background: url(img/langya.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例2-->
+					<div class="product">
+						<ul class="cf">
+							<a href="http://www.zhaozi.cn/"><div class="cf_l" style="background: url(img/zhaozi.png) center no-repeat;"></div></a>
+							<a href="http://www.fontke.com"><div class="cf_r" style="background: url(img/zikewang.png) center no-repeat;"></div></a>
+							<a href="http://www.sj00.com/"><div class="cf_l" style="background: url(img/shejiwuxian.png) center no-repeat;"></div></a>
+							<a href="http://www.mobanwang.com/"><div class="cf_r" style="background: url(img/mubanwang.png) center no-repeat;"></div></a>
+							<a href="http://www.17ziti.com/"><div class="cf_l" style="background: url(img/zitizhijia.png) center no-repeat;"></div></a>
+							<a href="http://www.font5.com.cn/"><div class="cf_r" style="background: url(img/liangban.png) center no-repeat;"></div></a>
+							<a href="http://www.zitichina.com/"><div class="cf_l" style="background: url(img/zitizhongguo.png) center no-repeat;"></div></a>
+							<a href="http://font.knowsky.com/"><div class="cf_r" style="background: url(img/zitibaoku.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例3-->
+					<div class="product">
+						<ul class="cf">
+							<a href="https://color.hailpixel.com/"><div class="cf_l" style="background: url(img/hailpixel.png) center no-repeat;"></div></a>
+							<a href="https://galactic.ink/sphere/"><div class="cf_r" style="background: url(img/galactic.png) center no-repeat;"></div></a>
+							<a href="https://color.adobe.com/zh/create/color-wheel/"><div class="cf_l" style="background: url(img/picta.png) center no-repeat;"></div></a>
+							<a href="http://www.pictaculous.com/"><div class="cf_r" style="background: url(img/adobe_color_cc.png) center no-repeat;"></div></a>
+							<a href="http://www.peise.net/"><div class="cf_l" style="background: url(img/peisewang.png) center no-repeat;"></div></a>
+							<a href="http://tool.c7sky.com/webcolor/#hue_0"><div class="cf_r" style="background: url(img/peise.png) center no-repeat;"></div></a>
+							<a href="http://www.shejidaren.com/examples/tools/color-scheme/"><div class="cf_l" style="background: url(img/color_hunter.png) center no-repeat;"></div></a>
+							<a href="http://www.colorhunter.com/"><div class="cf_r" style="background: url(img/color_scheme.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+					<!--案例4-->
+					<div class="product">
+						<ul class="cf">
+							<a href="http://www.xiusheji.com/"><div class="cf_l" style="background: url(img/xiusheji.png) center no-repeat;"></div></a>
+							<a href="http://chuangyiren.cn/"><div class="cf_r" style="background: url(img/chahua.png) center no-repeat;"></div></a>
+							<a href="http://www.8bears.com/"><div class="cf_l" style="background: url(img/bazhixiong.png) center no-repeat;"></div></a>
+							<a href="http://www.pplock.com/"><div class="cf_r" style="background: url(img/pp.png) center no-repeat;"></div></a>
+							<a href="http://arting365.com/"><div class="cf_l" style="background: url(img/arting.png) center no-repeat;"></div></a>
+							<a href="http://www.topys.cn/"><div class="cf_r" style="background: url(img/topys.png) center no-repeat;"></div></a>
+							<a href="http://www.ifavart.com/index.html/"><div class="cf_l" style="background: url(img/ifwant.png) center no-repeat;"></div></a>
+							<a href="http://www.ruiii.com/Photo/"><div class="cf_r" style="background: url(img/ruiyi.png) center no-repeat;"></div></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--标题栏-->
+
+			<div style="height: 50px;">
+				<div class="biaoti" style="background-image: url(img/UIlei.png);"></div>
+			</div>
+
+			<div class="con" style="background-image:url(img/Dribbble.png);">
+				<a href="https://dribbble.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">Dribbble</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/学UI.png);margin-left: 10px;">
+				<a href="http://www.xueui.cn/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">学UI网</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/UI图.png);margin-left: 10px;">
+				<a href="http://www.uiimg.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">UI图</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/UI设计网.png);margin-left: 10px;">
+				<a href="http://www.uisheji.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">UI设计网</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/55art.png);margin-top: 10px;">
+				<a href="http://www.55art.com/forum-129-1.html">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">55art</p>
+					</div>
+				</a>
+			</div>
+
+			<div class="con" style="background-image:url(img/uplabs.png);margin-left: 10px;margin-top: 10px;">
+				<a href="https://www.uplabs.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">uplabs</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/UImaker.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.uimaker.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">UImaker</p>
+					</div>
+				</a>
+			</div>
+			<div class="con" style="background-image:url(img/UIgreat.png);margin-left: 10px;margin-top: 10px;">
+				<a href="http://www.uigreat.com/">
+					<div class="con-cont">
+						<div class="con2"></div>
+						<p class="con-plus">UIgreat</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		
+		
+
+		<div class="other">
+
+
+			<div class="part">
+				<p class="pleft">购物/快递</p>
+				<ul class="left">
+					<a href="https://www.taobao.com/"><li>淘宝</li></a>
+					<a href="https://www.tmall.com/"><li>天猫</li></a>
+					<a href="https://ju.taobao.com/"><li>聚划算</li></a>
+					<a href="https://www.suning.com/"><li>苏宁</li></a>
+					<a href="https://www.jd.com/"><li>京东</li></a>
+				</ul>
+				<ul class="left">
+					<a href="https://www.vip.com/"><li>唯品会</li></a>
+					<a href="http://bj.jumei.com/"><li>聚美</li></a>
+					<a href="http://www.mogujie.com/"><li>蘑菇街</li></a>
+					<a href="http://www.dangdang.com/"><li>当当</li></a>
+					<a href="http://www.niuza.com/"><li>牛杂网</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.mizhe.com/"><li>米折</li></a>
+					<a href="http://www.feiniu.com/"><li>飞牛</li></a>
+					<a href="http://www.yhd.com/"><li>1号店</li></a>
+					<a href="http://www.kuaidi100.com/"><li>快递</li></a>
+					<a href="https://yz.cainiao.com/"><li>菜鸟</li></a>
+				</ul>
+				<ul class="left">
+					<a href="https://www.ele.me/home/"><li>饿了么</li></a>
+					<a href="http://jn.meituan.com/"><li>美团</li></a>
+					<a href="http://waimai.meituan.com/"><li>外卖</li></a>
+					<a href="https://jn.nuomi.com/"><li>糯米</li></a>
+					<a href="https://www.alipay.com/"><li>支付宝</li></a>
+				</ul>
+			</div>
+			<div class="part" style="margin-left: 1px;padding-left: 19px;">
+				<p class="pleft">手机/平板</p>
+				<ul class="left">
+					<a href="http://www.oneplus.cn/"><li>一加</li></a>
+					<a href="http://www.nubia.com/"><li>努比亚</li></a>
+					<a href="https://www.mi.com/"><li>小米</li></a>
+					<a href="http://www.coolpad.com/index.html"><li>酷派</li></a>
+					<a href="https://www.apple.com/cn/"><li>苹果</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.teclast.com/"><li>台电</li></a>
+					<a href="https://www.vmall.com/"><li>华为</li></a>
+					<a href="https://www.lenovo.com.cn/"><li>联想</li></a>
+					<a href="http://www1.ap.dell.com/content/default.aspx?c=cn&l=zh&s=&s=gen&~ck=cr"><li>戴尔</li></a>
+					<a href="http://www.sony.com.cn/"><li>索尼</li></a>
+				</ul>
+				<ul class="left">
+					<a href="https://www.meizu.com/"><li>魅族</li></a>
+					<a href="https://www.vivo.com.cn/"><li>vivo</li></a>
+					<a href="http://www.oppo.com/cn/"><li>oppo</li></a>
+					<a href="http://i360mall.com/"><li>360</li></a>
+					<a href="http://www.antutu.com/"><li>安兔兔</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.meitu.com/index.html"><li>美图</li></a>
+					<a href="http://www.ctrip.com/"><li>携程</li></a>
+					<a href="https://www.qunar.com/"><li>去哪儿</li></a>
+					<a href="https://www.ly.com/"><li>同城</li></a>
+					<a href="http://www.tuniu.com/"><li>途牛</li></a>
+				</ul>
+			</div>
+
+			<div class="part" style="margin-left: 1px;padding-left: 17px;">
+				<p class="pleft">办公/软件</p>
+				<ul class="left">
+					<a href="http://mofang.ruanmei.com/"><li>软媒</li></a>
+					<a href="http://www.360.cn/qudongdashi/"><li>360驱动</li></a>
+					<a href="https://wx.qq.com/"><li>微信</li></a>
+					<a href="https://im.qq.com/"><li>QQ</li></a>
+					<a href="https://office.qq.com/"><li>TIM</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.eyepetizer.net/"><li>开眼</li></a>
+					<a href="http://www.bybutter.com/"><li>黄油</li></a>
+					<a href="https://www.microsoft.com/zh-cn/software-download/windows10"><li>win10</li></a>
+					<a href="http://zhaopin.baidu.com/"><li>百聘</li></a>
+					<a href="http://www.kanzhun.com/"><li>看准网</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.zhaopin.com/"><li>智联招聘</li></a>
+					<a href="https://www.liepin.com/"><li>猎聘</li></a>
+					<a href="http://www.zhipin.com/"><li>Boss</li></a>
+					<a href="http://www.51job.com/"><li>51job</li></a>
+					<a href="http://www.qlrc.com/"><li>齐鲁人才</li></a>
+				</ul>
+				<ul class="left">
+					<a href="https://www.dingtalk.com/"><li>钉钉办公</li></a>
+					<a href="http://www.jingoal.com/index.html"><li>今目标</li></a>
+					<a href="https://www.lagou.com/"><li>拉钩网</li></a>
+					<a href="#"><li>-</li></a>
+					<a href="#"><li>-</li></a>
+				</ul>
+			</div>
+
+
+		</div>
+
+		<div class="dibu">
+			<div class="dibu_con">
+
+			<ul>
+				<a href="http://hao.cinemawk.com/"><li>创影导航</li></a>
+				<a href="http://www.hao123.com/sheji"><li>好123设计</li></a>
+				<a href="http://www.tooopen.cn/"><li>第九部落</li></a>
+				<a href="http://www.vipsheji.cn/"><li>V设计</li></a>
+				<a href="http://hao.uisdc.com/"><li>优设网址</li></a>
+				<a href="http://www.ubuuk.com/"><li>优波设计</li></a>
+				<a href="http://www.moreidea.cn/wangye.htm"><li>moreidea</li></a>
+				<a href="http://www.userinterface.com.cn/"><li>userinterface</li></a>
+				<a href="http://hao.shejidaren.com/"><li>设计导航</li></a>
+				<a href="http://www.eeff.net/navigation.php"><li>穿针引线</li></a>
+				<a href="http://www.niudana.com/#go=site"><li>牛大拿</li></a>
+				<a href="http://wz.cndesign.com/"><li>CND网址</li></a>
+				<a href="http://www.foolo.cn/"><li>设计师导航</li></a>
+			</ul>
+
+			</div>
+		</div>
+
+	</body>
+
+</html>

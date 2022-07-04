@@ -1,0 +1,453 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	background-repeat: no-repeat;
+	font-family: "microsoft yahei";
+}
+body {
+	background-color: #f2f2f2;
+	padding-top: 50px;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	background-image: url(../img/tiao.png);
+	background-repeat: repeat-x;
+	background-color: #e6d6c3;
+	position: fixed;
+	/*border-bottom: 1px solid#CBB69D;*/
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:1;
+}
+
+.nav_con ul {
+	float: right;
+}
+
+.nav_con {
+
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+}
+
+.nav_con li {
+	cursor: pointer;
+	float: left;
+	margin-left: 5px;
+}
+
+.nav_con li a {
+	display: block;
+	color: #552e00;
+	line-height: 53px;
+	margin-top: 0px;
+	transition: all 0.3s;
+}
+
+.nav_con li a:hover {
+	margin-top: -53px;
+}
+
+.nav_con li a span.spa {
+	background: #d0b99e;
+	color: #9c0000;
+	font-family: "微软雅黑";
+	border-bottom: 20px solid #9C0000;
+	height: 47px;
+}
+
+.nav_con li a span {
+	display: block;
+}
+
+.daohang {
+	width: 1198px;
+	height: 38px;
+	margin: auto;
+	border: 1px solid#d5b083;
+	margin-top: 10px;
+	overflow: hidden;
+	background: #fffcf8;
+}
+.daohang li {
+	float: left;
+	line-height: 38px;
+	padding: 0 20px;
+	color: #552e00;
+	transition: 0.3s all ease;
+}
+
+.daohang li:hover {
+	background-color: #c18a49;
+	color: #fff;
+}
+
+.dh {
+	float: left;
+	width: 21px;
+	height: 40px;
+	background-image: url(../img/daohang.jpg);
+}
+.bianju{
+	margin-left: 17px;
+}
+
+.sy {
+	float: left;
+	width: 21px;
+	height: 40px;
+	background-image: url(../img/shiyong.jpg)
+}
+
+.shizhong {
+	border-width: 1px;
+	border-color: rgb(203, 182, 157);
+	border-style: solid;
+	border-radius: 2px;
+	background-color: rgb(255, 252, 248);
+	width: 252px;
+	height: 268px;
+	float: left;
+}
+
+.rongqi {
+	width: 1200px;
+	height: 272px;
+	margin: 12px auto 0;
+}
+
+.con {
+	width: 222px;
+	height: 128px;
+	background-color: #fffcf8;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid#cbb69d;
+	border-radius: 2px;
+	float: left;
+	margin-left: 20px;
+	background-position: 50%;
+}
+
+.con2 {
+	width: 224px;
+	height: 130px;
+}
+
+.con-cont {
+	height: 220px;
+	position: absolute;
+	transition: all 0.2s;
+}
+
+.con-plus {
+	height: 30px;
+	background-color: rgba(113, 62, 0, 0.5);
+	color: white;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.con-cont:hover {
+	margin-top: -30px;
+}
+
+
+/*面板*/
+img {
+	border: none;
+}
+/*public*/
+
+.fr {
+	display: inline;
+	float: right
+}
+
+.cf:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden
+}
+
+.cf {
+	zoom: 1
+}
+
+.cf_l{
+	width: 125px;
+	height: 70px;
+	border-top: 1px solid #eee6db;
+	border-right: 1px solid #eee6db;
+	float: left;
+}
+.cf_r{
+	width: 126px;
+	height: 70px;
+	border-top: 1px solid #eee6db;
+	float: left;
+}
+
+.pb10 {
+	padding-bottom: 10px
+}
+
+.mt10 {
+	margin-top: 10px
+}
+
+/*main*/
+
+.rq {
+	width: 1200px;
+	height: 320px;
+	margin:12px auto 0;
+}
+
+.lanrenzhijia {
+	clear: both;
+	width: 252px;
+	background: url(../img/beijing.png)no-repeat;
+	border: 1px solid #cbb69d;
+	border-radius: 2px;
+	float: left;
+}
+
+.lanrenzhijia .title {
+	height: 20px;
+	/*border-bottom: 1px solid #e7e7e7;*/
+	/*padding-bottom: 15px;*/
+}
+
+.lanrenzhijia .title-list {
+	position: relative;
+	top: 6px;
+}
+
+.lanrenzhijia .title-list li {
+	cursor: pointer;
+	width: 63px;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	display: inline;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #ccb99f;
+}
+
+.lanrenzhijia .title-list li.on {
+	color: #b70000;
+}
+
+.lanrenzhijia .title-list p {
+	position: absolute;
+	top: -7px;
+	left: 0px;
+	width: 63px;
+	height: 7px;
+	border-top: 2px solid #b70000;
+	overflow: hidden;
+	text-align: center;
+}
+
+.lanrenzhijia .title-list b {
+	width: 0;
+	height: 0;
+	margin-top: -3px;
+	border-style: solid dashed dashed dashed;
+	border-width: 9px;
+	border-color: #ff6600 #fff #fff #fff;
+	overflow: hidden;
+	zoom: 1;
+	font-size: 0;
+}
+
+.product {
+	height: 283px;
+	position: relative;
+	overflow: hidden;
+	display: none;
+	margin-top: 15px;
+
+}
+
+.product ul {
+	position: absolute;
+	left: 0px;
+}
+
+.product-wrap .show {
+	display: block;
+
+}
+
+.product-wrap .product li {
+	float: left;
+	display: inline;
+	margin-left: 13px;
+	background: #f3f3f3;
+	border: 2px solid #fafafa;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	-ms-transition: 0.4s;
+}
+
+.product-wrap .product li.ml0 {
+	margin-left: 0px;
+}
+
+.product-wrap .product li a.imgwrap {
+	display: block;
+	width: 226px;
+	height: 200px;
+	background: #fff;
+	text-align: center;
+}
+
+.product-wrap .product li p {
+	padding-left: 15px;
+	color: #666666;
+	line-height: 22px;
+}
+
+.product-wrap .product li p a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.product-wrap .product li p a:hover {
+	color: #b70000;
+	text-decoration: none;
+}
+.biaoti{
+	width: 924px;
+	height: 38px;
+	background-image:url(../img/pingmian.png);
+	background-color: #e6d6c3;
+	float: right;
+	border: 1px solid #cbb69d;
+}
+.other{
+	width: 1198px;
+	height: 170px;
+	background: #fffcf8 url(../img/beijing2.png);
+	border: 1px solid #cbb69d;
+	margin: 12px auto;
+}
+.part{
+	padding-left:20px;
+	float: left;
+	font-size: 14px;
+	/*margin: 0px 0 0 30px;*/
+	transition: all 0.3s;
+}
+.part:hover{
+	background: #fff0e8;
+
+}
+.pleft{
+	text-align: left !important;
+	line-height: 42px;
+	color: #462600;
+}
+.left{
+	height: 32px;
+	padding-left: 20px;
+
+}
+.left:nth-child(1){
+	margin-top:70px;
+}
+.left li{
+	float: left;
+	width: 72px;
+	text-align: left;
+}
+.left a{
+	text-decoration: none;
+	color: #552e00;
+
+	transition: all 0.3s;
+}
+.left a:hover{
+	color: #b70000;
+}
+.dibu{
+	width: 100%;
+	height:48px;
+	background-color: #e6d6c3;
+	border-top: 1px solid#CBB69D;
+	border-bottom: 1px solid#CBB69D;
+}
+.dibu_con{
+	width: 1198px;
+	margin: auto;
+}
+.dibu ul li{
+	float: left ;
+	padding:0 12px;
+	line-height: 47px;
+}
+.dibu a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #aa8151;
+}
+
+.dibu a:hover{
+	color: #9C0000;
+}
+
+/*----------------滚动条-----------------*/ 
+::-webkit-scrollbar{
+	/*滚动条整体部分*/
+	width: 8px;
+	height: 16px;
+	padding: 1px;
+	background-color: #fff;
+	/*border: 1px solid #ccc;*/
+	border: 1px solid #a1aecf;
+	border-top: none;
+	border-bottom: none;
+} 
+::-webkit-scrollbar-thumb{
+	/*滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）*/
+	background-color: #7482a4;
+	/*border: 1px solid #ccc;*/
+	border-top: none;
+	border-bottom: none;
+	/*border-radius: 10px;*/
+}
+::-webkit-scrollbar-track{
+	/*滚动条的轨道（里面装有Thumb）*/
+	/*width: 8px;
+	height: 8px;
+	background-color: #ccc;
+	border: 2px solid #fff;*/
+}
+::-webkit-scrollbar-button{
+	/*滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。*/
+	/*width: 8px;
+	height: 8px;
+	background-color: saddlebrown;
+	border: 1px solid #FF6600;*/
+}
+::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件

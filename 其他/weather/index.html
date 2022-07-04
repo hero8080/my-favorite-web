@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+		<div>
+			<ul id="weather">
+				<li>城市：濟南</li>
+				<li>
+					<img src="img/00_0.png"/>
+					<span>天气：大雨</span>
+					<span>气温：30℃</span>
+					<span>湿度：75</span>
+					<span>時間：2017-07-06 08:00:00</span>
+				</li>
+			</ul>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//	{"city_id":"CH12","name":"山东","en":"","list":[
+			//    {"city_id":"CH1201","name":"济南","en":"","list":[
+			//      {" city_id":"CH120101","name":"济南","en":"jinan"}
+			//    ]},
+			
+			$.ajax({
+				type:"get",
+				url:"http://api.yytianqi.com/weatherhours?city=CH120101&key=i59412rhprowgw10",
+				async:true,
+				success:function(res){
+					var result = JSON.parse(res)
+					renderData(result);
+				}
+			});
+			function renderData(res){
+				
+//				<li>
+//					<img src="img/00_0.png"/>
+//					<span>天气：大雨</span>
+//					<span>气温：30℃</span>
+//					<span>湿度：75</span>
+//					<span>時間：2017-07-06 08:00:00</span>
+//				</li>
+				
+				var data = res.data.list;
+				var html = '<li>城市：'+res.data.cityName+'</li>';
+				
+				console.log(data)
+				for (var i=0;i<data.length;i++) {
+					html+='<li><img src="img/'+data[i].numtq+'_0.png"/><span>天气：'+data[i].tq+'</span><span>气温：'+data[i].qw+'℃</span><span>湿度：'+data[i].sd+'</span><span>時間：'+data[i].sj+'</span></li>'
+				}
+				console.log(html)
+				var ul = document.getElementById('weather');
+				ul.innerHTML=html;
+
+			}
+
+		</script>
+	</body>
+
+</html>
