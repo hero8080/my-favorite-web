@@ -142,4 +142,9 @@ window.onload = function() {
 	//
 	setInterval(draw2, 500);
 
+	//处理考研时间
+	var endDate = new Date('2022/12/14');
+	var currentDate = new Date();
+	let dayTime=endDate.getTime()-currentDate.getTime()
+	document.getElementById('ky_day_value').innerText = parseInt(dayTime / 1000 / 60 / 60 / 24);
 }

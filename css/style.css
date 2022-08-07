@@ -413,8 +413,65 @@ img {
 .dibu a:hover{
 	color: #9C0000;
 }
+/*考研*/
+/*字体*/
+@font-face {
+	font-family: '_number';
+	src: url("./_num.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+._number,
+._number > div,
+._number > p,
+._number > a {
+	font-family: '_number';
+}
+.ky_model{
+	/*position: fixed;*/
+	/*right: 20px;*/
+	/*bottom: 20px;*/
 
-/*----------------滚动条-----------------*/ 
+	/*width: 222px;*/
+	/*height: 128px;*/
+	/*background-color: #fffcf8;*/
+	/*border: 1px solid#cbb69d;*/
+	/*border-radius: 2px;*/
+}
+.ky_model .ky_tips{
+	text-align: center;
+	font-size: 14px;
+	padding-top: 16px;
+	color: #552e00;
+}
+
+.ky_model .ky_day{
+	font-size: 40px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 16px;
+	color: #b17023;
+	line-height: 1;
+	position: relative;
+}
+
+.ky_model #ky_day_value{
+	font-size: 40px;
+	padding-top: 16px;
+	color: #b17023;
+	line-height: 1;
+	position: relative;
+}
+
+.ky_model .ky_day_name{
+	position: absolute;
+	right: -22px;
+	bottom: 4px;
+	font-size: 16px;
+}
+
+/*----------------滚动条-----------------*/
 ::-webkit-scrollbar{
 	/*滚动条整体部分*/
 	width: 8px;
@@ -425,7 +482,7 @@ img {
 	border: 1px solid #a1aecf;
 	border-top: none;
 	border-bottom: none;
-} 
+}
 ::-webkit-scrollbar-thumb{
 	/*滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）*/
 	background-color: #7482a4;
@@ -451,3 +508,4 @@ img {
 ::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
 ::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
 ::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+
