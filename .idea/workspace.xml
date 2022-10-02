@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02002724-0bec-4cd4-bada-1e5ff30e1ce9" name="Changes" comment="考研倒计时">
+    <list default="true" id="02002724-0bec-4cd4-bada-1e5ff30e1ce9" name="Changes" comment="爱奇艺">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -22,13 +22,13 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue_pro/Magic-Grid" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/小网站",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\小网站\css" />
@@ -46,7 +46,9 @@
       <workItem from="1657416803055" duration="3509000" />
       <workItem from="1659880188923" duration="264000" />
       <workItem from="1659887170270" duration="151000" />
-      <workItem from="1661691988926" duration="82000" />
+      <workItem from="1661691988926" duration="125000" />
+      <workItem from="1661860749656" duration="48000" />
+      <workItem from="1664727504641" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1656935792826</created>
@@ -62,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659880215869</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="爱奇艺">
+      <created>1661692105303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661692105303</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="考研倒计时" />
-    <option name="LAST_COMMIT_MESSAGE" value="考研倒计时" />
+    <MESSAGE value="爱奇艺" />
+    <option name="LAST_COMMIT_MESSAGE" value="爱奇艺" />
   </component>
 </project>
